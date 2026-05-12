@@ -1,0 +1,190 @@
+.scrim {
+  position: fixed;
+  inset: 0;
+  background: rgba(14, 14, 14, 0.4);
+  z-index: 200;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity var(--p-motion-duration-moderate) var(--p-motion-easing-base);
+}
+.scrimOpen { opacity: 1; pointer-events: auto; }
+
+.panel {
+  position: fixed;
+  bottom: 0; left: 0; right: 0;
+  max-height: 85vh;
+  background: var(--ink-20);
+  border-radius: 16px 16px 0 0;
+  z-index: 201;
+  display: flex;
+  flex-direction: column;
+  transform: translateY(100%);
+  transition: transform var(--p-motion-duration-moderate) var(--p-motion-easing-base);
+  max-width: var(--max-width);
+  margin: 0 auto;
+}
+.panelOpen { transform: translateY(0); }
+
+.dragWrap {
+  width: 100%;
+  padding: var(--p-spacing-12) 0 0;
+  display: flex;
+  justify-content: center;
+  cursor: grab;
+  flex-shrink: 0;
+}
+.dragPill {
+  width: 32px; height: 3px;
+  background: var(--ink-100);
+  border-radius: 2px;
+}
+
+.header {
+  padding: var(--p-spacing-12) var(--p-spacing-16) var(--p-spacing-12);
+  border-bottom: 0.5px solid var(--p-color-border-default);
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: var(--p-spacing-12);
+  flex-shrink: 0;
+}
+
+.title {
+  font-family: var(--font-serif);
+  font-size: 1rem;
+  font-weight: 400;
+  color: var(--ink-900);
+  line-height: 1.3;
+}
+
+.close {
+  background: none;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  color: var(--ink-500);
+  padding: 2px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  transition: opacity var(--p-motion-duration-short) ease;
+}
+.close:hover { opacity: 0.6; }
+
+/* PDS Tabs Bar — divs only, zero stroke anywhere */
+.tabs {
+  display: flex;
+  flex-shrink: 0;
+  background: var(--ink-20);
+}
+
+.tab {
+  flex: 1;
+  padding: 10px 4px;
+  font-family: var(--font-sans);
+  font-size: 0.65rem;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  cursor: pointer;
+  color: var(--ink-200);
+  font-weight: 300;
+  text-align: center;
+  user-select: none;
+  transition: color var(--p-motion-duration-short) ease, font-weight var(--p-motion-duration-short) ease;
+}
+.tabActive { color: var(--ink-900); font-weight: 500; }
+.tab:hover:not(.tabActive) { color: var(--ink-300); }
+
+.scroll {
+  flex: 1;
+  overflow-y: auto;
+  padding: var(--p-spacing-16);
+  -webkit-overflow-scrolling: touch;
+}
+
+.tabContent { display: flex; flex-direction: column; gap: var(--p-spacing-16); }
+
+/* Image slot */
+.imgSlot {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16/9;
+  background: repeating-linear-gradient(
+    -45deg,
+    var(--ink-50), var(--ink-50) 7px,
+    #ebe8e3 7px, #ebe8e3 14px
+  );
+  border: none;
+  outline: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: var(--p-spacing-8);
+  cursor: zoom-in;
+  color: var(--ink-300);
+  overflow: hidden;
+  transition: opacity var(--p-motion-duration-short) ease;
+}
+.imgSlot:hover { opacity: 0.85; }
+
+.img { width: 100%; height: 100%; object-fit: cover; }
+
+.imgSlotLabel {
+  font-family: var(--font-sans);
+  font-size: 0.65rem;
+  color: var(--ink-300);
+  font-style: italic;
+  text-align: center;
+}
+
+.imgSlotHint {
+  position: absolute;
+  bottom: 8px; right: 10px;
+  font-size: 0.65rem;
+  color: var(--ink-200);
+}
+
+.copy {
+  font-family: var(--font-sans);
+  font-size: 0.78rem;
+  font-weight: 300;
+  color: var(--ink-500);
+  line-height: 1.78;
+  margin: 0;
+}
+
+.caption {
+  font-family: var(--font-sans);
+  font-size: 0.7rem;
+  color: var(--ink-300);
+  font-style: italic;
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* Leadership callout */
+.callout {
+  border-left: 1.5px solid var(--gold);
+  padding: var(--p-spacing-12) var(--p-spacing-16);
+  background: var(--gold-light);
+}
+.calloutLabel {
+  font-family: var(--font-sans);
+  font-size: 0.65rem;
+  color: var(--gold);
+  font-weight: 400;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  margin-bottom: var(--p-spacing-8);
+}
+.calloutText {
+  font-family: var(--font-sans);
+  font-size: 0.78rem;
+  color: var(--ink-500);
+  font-weight: 300;
+  font-style: italic;
+  line-height: 1.7;
+  margin: 0;
+}

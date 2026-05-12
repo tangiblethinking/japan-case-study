@@ -1,0 +1,119 @@
+.card {
+  padding: var(--p-spacing-16) var(--p-spacing-16) var(--p-spacing-24);
+  border-bottom: 0.5px solid var(--p-color-border-subtle);
+}
+
+.head {
+  display: grid;
+  grid-template-columns: 28px 1fr 68px;
+  align-items: flex-start;
+  gap: var(--p-spacing-8);
+  margin-bottom: var(--p-spacing-12);
+}
+
+.index {
+  font-family: var(--font-serif);
+  font-size: 0.65rem;
+  color: var(--gold);
+  font-weight: 300;
+  letter-spacing: 0.06em;
+  padding-top: 0.2rem;
+}
+
+.headText { display: flex; flex-direction: column; gap: 3px; }
+
+.title {
+  font-family: var(--font-serif);
+  font-size: 0.95rem;
+  font-weight: 400;
+  color: var(--ink-900);
+  line-height: 1.3;
+}
+
+.summary {
+  font-family: var(--font-sans);
+  font-size: 0.72rem;
+  font-weight: 300;
+  color: var(--ink-300);
+  line-height: 1.5;
+  margin: 0;
+}
+
+/* Thumbnail — zero stroke, image or placeholder */
+.thumb {
+  width: 68px;
+  height: 52px;
+  background: repeating-linear-gradient(
+    -45deg,
+    var(--ink-50), var(--ink-50) 5px,
+    #ebe8e3 5px, #ebe8e3 10px
+  );
+  border: none;
+  outline: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  flex-shrink: 0;
+  color: var(--ink-300);
+  overflow: hidden;
+  transition: opacity var(--p-motion-duration-short) ease;
+}
+
+.thumb:hover { opacity: 0.72; }
+
+.thumbImg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Body */
+.body { padding-left: 36px; }
+
+/* PDS Tag — background fill ONLY, zero stroke */
+.tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  background: var(--gold-light);
+  padding: 4px 9px;
+  font-family: var(--font-sans);
+  font-size: 0.65rem;
+  color: var(--gold-dark);
+  font-weight: 400;
+  letter-spacing: 0.05em;
+  margin-bottom: var(--p-spacing-8);
+  /* zero border — none at all */
+}
+
+.bodyText {
+  font-family: var(--font-sans);
+  font-size: 0.78rem;
+  font-weight: 300;
+  color: var(--ink-500);
+  line-height: 1.78;
+  margin-bottom: var(--p-spacing-12);
+  max-width: 52ch;
+}
+
+/* See more — PDS Button Pure pattern */
+.seeMore {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  font-family: var(--font-sans);
+  font-size: 0.72rem;
+  font-weight: 400;
+  color: var(--accent);
+  letter-spacing: 0.03em;
+  cursor: pointer;
+  background: none;
+  border: none;
+  outline: none;
+  border-bottom: 0.5px solid rgba(26, 58, 92, 0.3);
+  padding-bottom: 1px;
+  transition: opacity var(--p-motion-duration-short) ease;
+}
+
+.seeMore:hover { opacity: 0.6; }

@@ -1,0 +1,58 @@
+/* ============================================================
+   DESIGN TOKENS — Japan Case Study
+   Foundation: Porsche Design System v4 + Japan ink palette
+   ============================================================ */
+:root {
+  /* Porsche DS color alignment */
+  --p-color-background-base:    #faf9f7;
+  --p-color-background-surface: #f5f4f0;
+  --p-color-background-frosted: rgba(250,249,247,0.96);
+  --p-color-neutral-contrast-high: #0e0e0e;
+  --p-color-neutral-contrast-medium: #555552;
+  --p-color-neutral-contrast-low: #8e8e8a;
+  --p-color-neutral-contrast-lower: #c8c6c0;
+  --p-color-border-default: #e0ddd7;
+  --p-color-border-subtle: #e8e6e0;
+
+  /* Japan ink palette */
+  --ink-900: #0e0e0e;
+  --ink-700: #2c2c2c;
+  --ink-500: #555552;
+  --ink-300: #8e8e8a;
+  --ink-200: #c8c6c0;
+  --ink-100: #d4d2cc;
+  --ink-50:  #f5f4f0;
+  --ink-20:  #faf9f7;
+
+  /* Accent */
+  --accent:      #1a3a5c;
+  --accent-light: rgba(26,58,92,0.08);
+  --gold:        #c8a96e;
+  --gold-light:  rgba(200,169,110,0.13);
+  --gold-dark:   #7a5c12;
+
+  /* Typography */
+  --font-serif: 'Noto Serif JP', 'Georgia', serif;
+  --font-sans:  'DM Sans', 'Helvetica Neue', sans-serif;
+
+  /* Porsche DS spacing scale */
+  --p-spacing-4:   0.25rem;
+  --p-spacing-8:   0.5rem;
+  --p-spacing-12:  0.75rem;
+  --p-spacing-16:  1rem;
+  --p-spacing-24:  1.5rem;
+  --p-spacing-32:  2rem;
+  --p-spacing-48:  3rem;
+  --p-spacing-64:  4rem;
+  --p-spacing-96:  6rem;
+
+  /* Layout */
+  --gutter: clamp(1.25rem, 5vw, 2rem);
+  --max-width: 680px;
+
+  /* Motion — Porsche DS easing */
+  --p-motion-easing-base: cubic-bezier(0.16, 1, 0.3, 1);
+  --p-motion-duration-short: 180ms;
+  --p-motion-duration-moderate: 320ms;
+  --p-motion-duration-long: 560ms;
+}

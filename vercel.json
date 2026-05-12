@@ -1,0 +1,12 @@
+{
+  "rewrites": [
+    { "source": "/(.*)", "destination": "/index.html" }
+  ],
+  "routes": [
+    {
+      "src": "/persona-platform",
+      "dest": "https://uxapex.com/case-studies/ai-persona-platform",
+      "status": 302
+    }
+  ]
+}
