@@ -21,7 +21,7 @@ const SECTIONS = [
     overview: 'Before a single screen was designed, I directed a structured research programme mapping what Japan\'s digital commerce market actually required. Competitive analysis across Japanese e-commerce leaders, DTC wellness brands, and Western entrants revealed a consistent pattern: brands that arrived with culturally-neutral experiences were perceived as foreign and untrustworthy. Japanese consumers expected contextual fluency that goes far beyond language. We partnered with an external translation and cultural consulting vendor — not for language alone, but for cultural signal interpretation.',
     leadership: 'I presented the competitive failure analysis directly to the CMO and Director of Product. The finding that other brands had failed specifically because of missing cultural translation — not product quality — was the turning point. My recommendation for a culture-first design method was approved. That decision defined every phase that followed.',
     imageCaption: 'Competitive landscape mapping: Western DTC brands entering Japan — success factors and failure patterns. Directed by Christopher Kenreigh, 2024.',
-    thumbSrc: null,   // Replace: '/images/01-thumb.jpg'
+    thumbSrc: https://cdn.myportfolio.com/abc1e0ab-7370-4502-8c78-92428397bf66/368e41ce-d421-4f42-91b0-1f15025e0f75.png?h=e8a6d530788803262135ddad77cee648,   // Replace: '/images/01-thumb.jpg'
     imageSrc: null,   // Replace: '/images/01-competitive-analysis.jpg'
     imageAlt: 'Competitive analysis of Western brands entering Japan',
   },
